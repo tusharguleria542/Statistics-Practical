@@ -84,7 +84,7 @@ pip install pandas numpy matplotlib seaborn scipy
 1. Clone the repository and navigate to this folder:
    ```bash
    git clone [https://github.com/tusharguleria542/Statistics-Practical.git](https://github.com/tusharguleria542/Statistics-Practical.git)
-   cd "Statistics-Practical/practical 2"
+   cd "Statistics-Practical/Practical-02"
    ```
 2. Ensure `TeachingRatings.csv` is in this folder.
 3. Run the notebook in Jupyter Notebook or VS Code.Notebook or VS Code.
