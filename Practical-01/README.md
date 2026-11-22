@@ -40,4 +40,77 @@ This practical revisits core **Pandas** and **NumPy** workflows commonly used in
   - **Inverse:** `np.linalg.inv(matrix_a)`
 
 ### Optional: One-Hot Encoding (Categorical to Numerical)
-- Applied `pd.get_dummies(df, columns=['gender'], dtype=int)` to convert the categorical `gender` column (`male` / `female`) into binary numerical columns (`gender_female
+- Applied `pd.get_dummies(df, columns=['gender'], dtype=int)` to convert the categorical `gender` column (`male` / `female`) into binary numerical columns (`gender_female`, `gender_male`) suitable for machine learning models.
+
+---
+
+## Sample Outputs
+
+**Matrices Extracted:**
+```text
+Matrix A:
+[[72 72]
+ [69 90]]
+
+Matrix B:
+[[90 95]
+ [47 57]]
+```
+
+**Operations Summary:**
+```text
+Addition (A + B):
+[[162 167]
+ [116 147]]
+
+Subtraction (A - B):
+[[-18 -23]
+ [ 22  33]]
+
+Element-wise Multiplication (A * B):
+[[6480 6840]
+ [3243 5130]]
+
+Dot Product (A @ B):
+[[ 9864 10944]
+ [10440 11685]]
+
+Transpose of A:
+[[72 69]
+ [72 90]]
+
+Inverse of A:
+[[ 0.05952381 -0.04761905]
+ [-0.04563492  0.04761905]]
+```
+
+---
+
+## Prerequisites
+
+- Python 3.x
+- `pandas`
+- `numpy`
+
+Install dependencies locally if running outside Google Colab:
+```bash
+pip install pandas numpy
+```
+
+---
+
+## How to Run
+
+### Option 1: Google Colab
+1. Open the `.ipynb` notebook in [Google Colab](https://colab.research.google.com/).
+2. Upload `StudentsPerformance.csv` to the `/content/` directory.
+3. Run all cells sequentially (`Runtime` → `Run all`).
+
+### Option 2: Local Machine
+1. Clone the repository and navigate to this folder:
+   ```bash
+   git clone [https://github.com/tusharguleria542/Statistics-Practical.git](https://github.com/tusharguleria542/Statistics-Practical.git)
+   cd "Statistics-Practical/Practical-01"
+   ```
+2. Update the CSV path in `pd.read_csv()` if `StudentsPerformance.csv` is stored in this folder.
+3. Run the notebook in Jupyter Notebook or VS Code
